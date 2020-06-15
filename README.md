@@ -5,6 +5,9 @@ It allow 3rd customize specific local commend of each Content.
 It do not denpend on NuwaSDK version, but software version.
 Please make sure Robot on 100JP MR2 later software.
 
+# Compatible robot version
+coming soon
+
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
 * NuwaRobotics Developer Website (https://dss.nuwarobotics.com/)
