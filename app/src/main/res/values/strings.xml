@@ -1,0 +1,9 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Partner Content Local Command Provider</string>
+
+    <string-array name="voice_cmd_format">
+        <item>我想看<xliff:g id="keyword">%1$s</xliff:g></item>
+        <item>看<xliff:g id="keyword">%1$s</xliff:g></item>
+    </string-array>
+
+</resources>

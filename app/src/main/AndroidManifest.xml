@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nuwarobotics.provider.cmdcontent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".PartnerContentProvider"
+            android:authorities="com.3rd.provider.content.cmd"
+            android:exported="true">
+            <meta-data
+                android:name="com.nuwarobotics.api.meta.PARTNER_CONTENT_TABLE"
+                android:value="nuwa_example_cmd_table" />
+            <meta-data
+                android:name="com.nuwarobotics.api.meta.array.PARTNER_CONTENT_VOICE_FORMAT"
+                android:resource="@array/voice_cmd_format" />
+        </provider>
+
+
+
+        <receiver android:name=".DebugReceiver">
+            <intent-filter>
+                <action android:name="com.nuwarobotics.api.action.insert_test_data" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

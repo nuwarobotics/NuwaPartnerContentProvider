@@ -1,0 +1,2 @@
+rootProject.name='NuwaPartnerContentProvider'
+include ':app'
