@@ -68,4 +68,8 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
     //Insert Data to DB
     Uri myuri = PartnerProviderAPI.insert(context,mTestData1);
  ```
-
+# `Debug`
+ * query is data insert success
+   ```
+   adb shell content query --uri content://com.3rd.provider.content.cmd/nuwa_example_cmd_table --projection local_command:entity:start_type:intent_uri:intent_uri --where "start_type=\'ACTIVITY\'"
+   ```
