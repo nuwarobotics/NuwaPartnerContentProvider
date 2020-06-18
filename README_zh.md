@@ -6,7 +6,7 @@ It do not denpend on NuwaSDK version, but software version.
 Please make sure Robot on 100JP MR2 later software.
 
 # Compatible robot version
-coming soon
+* 此功能開發中，僅提供給合作廠商測試APK
 
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
@@ -17,7 +17,7 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
 # `SOP : How to use example`
  * 安裝支援全域LocalCommand的Patch(APK)
     + 原Nuwa SDK的LocalCommand僅作用在APP開啟並call API時，此功能用於提供第三方有一個媒介可以把必要資訊讓NUWA System可以讀到並設定。
-    + 請先安裝附件SkillService APP (SkillService_2020-06-12_v0.0.1.0511fbe_debug.apk
+    + 請先安裝附件SkillService APP (SkillService_2020-06-12_v0.0.1.0511fbe_debug.apk (此功能開發中，僅提供給合作廠商)
     
  * Step 1 : 把範例中幾隻Code Copy到自己的APP中  (注意:有幾隻Code建議copy後不要動)
     + PartnerContentProvider.java (Copy, but DO NOT MODIFY)
