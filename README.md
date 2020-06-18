@@ -20,8 +20,19 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
     + PartnerContentProviderHelper.java (Copy, but DO NOT MODIFY)
     + DataColumns.java (Copy, but DO NOT MODIFY)
     + PartnerProviderAPI.java (Copy, 3rd need mofiy some config)
-    + DebugReceiver.java (Optional)
- * Step 2 " Declare provider to 3rd Androidmanifest.xml 
+    + DebugReceiver.java (Optional, debug sample code)
+ * Step 2 : Modify Config on PartnerProviderAPI.java
+ ```
+    //Modify 3rd AUTHORITY (MUST MODIFY)
+    public static final String AUTHORITY = "com.3rd.provider.content.cmd";
+ 
+    //Modify 3rd local command DB name
+    public static final String DATABASE_NAME = "PartnerContentDB";
+    
+    //Modify 3rd local command table name
+    public static final String TABLE_NAME = "nuwa_example_cmd_table";
+ ```
+ * Step 3 " Declare provider to 3rd Androidmanifest.xml 
  ```
     <provider
         android:name=".PartnerContentProvider"
@@ -34,17 +45,6 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
             android:name="com.nuwarobotics.api.meta.array.PARTNER_CONTENT_VOICE_FORMAT"
             android:resource="@array/voice_cmd_format" />
     </provider>
- ```
- * Step 3 : Modify Config on PartnerProviderAPI.java
- ```
-    //Modify 3rd AUTHORITY (MUST MODIFY)
-    public static final String AUTHORITY = "com.3rd.provider.content.cmd";
- 
-    //Modify 3rd local command DB name
-    public static final String DATABASE_NAME = "PartnerContentDB";
-    
-    //Modify 3rd local command table name
-    public static final String TABLE_NAME = "nuwa_example_cmd_table";
  ```
  * Step 4 : Start Insert Local Command Data to DB
  ```
