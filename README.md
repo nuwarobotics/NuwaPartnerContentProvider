@@ -32,7 +32,7 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
     //Modify 3rd local command table name
     public static final String TABLE_NAME = "nuwa_example_cmd_table";
  ```
- * Step 3 " Declare provider to 3rd Androidmanifest.xml 
+ * Step 3 " Declare authorities of provider to 3rd Androidmanifest.xml 
  ```
     <provider
         android:name=".PartnerContentProvider"
