@@ -50,19 +50,24 @@ NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
  ```
     //Insert 1st local_command data
     ContentValues mTestData1 = new ContentValues();
+
     //Optional : String, user customize locol_command
         mTestData1.put(DataColumns.PARTNER_CONTENT_CMD_COLUMN.COLUMN_LOCAL_COMMAND, "我要設定聲音");
+
     //Mandatory : String, entity of this command
     //It will combine with format string of android:name="com.nuwarobotics.api.meta.array.PARTNER_CONTENT_VOICE_FORMAT"
         mTestData1.put(DataColumns.PARTNER_CONTENT_CMD_COLUMN.COLUMN_ENTITY, "設定聲音");
+
     //Mandatory : String, start type such as ACTIVITY, SERVICE, BROADCAST
         mTestData1.put(DataColumns.PARTNER_CONTENT_CMD_COLUMN.COLUMN_START_TYPE, DataColumns.START_TYPE_ACTIVITY);
 
     //Example of convert Intent to Uri
         Intent testIntent = new Intent("com.nuwarobotics.settings.SHOW");
         testIntent.putExtra("page","VolumeCategory");
+
     //Mandatory : String, Full Intent uri to trigger 3rd function
         mTestData1.put(DataColumns.PARTNER_CONTENT_CMD_COLUMN.COLUMN_INTENT_URI, testIntent.toUri(Intent.URI_INTENT_SCHEME));
+
     //Optional : String, Intent target package(if target not your app)
         mTestData1.put(DataColumns.PARTNER_CONTENT_CMD_COLUMN.COLUMN_INTENT_PACKAGE, "com.nuwarobotics.settings");
         
