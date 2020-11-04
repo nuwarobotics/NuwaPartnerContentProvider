@@ -8,6 +8,7 @@ Please make sure Robot on 100JP MR2/10000 MR8 later software.
 
 # Compatible robot version
 100JP : 1.3966.100JP.1
+
 10000 : 1.4433.10000.1 
 
 # `Nuwa Website`
