@@ -7,13 +7,14 @@ It do not denpend on NuwaSDK version, but software version.
 Please make sure Robot on 100JP MR2/10000 MR8 later software.
 
 # Compatible robot version
-coming soon
+100JP : 1.3966.100JP.1
+10000 : 1.4433.10000.1 
 
 # `Nuwa Website`
 * NuwaRobotics Website (https://www.nuwarobotics.com/)
 * NuwaRobotics Developer Website (https://dss.nuwarobotics.com/)
 
-NOTICE : Please get NuwaSDK from Nuwarobotics Developer Website
+Please get NuwaSDK from Nuwarobotics Developer Website
 
 # `SOP : How to use example`
  * Step 1 : Integrate(copy) NuwaPartnerContentProvider source code to 3rd App
