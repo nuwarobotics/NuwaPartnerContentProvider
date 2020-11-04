@@ -1,9 +1,10 @@
 # NuwaPartnerContentProvider
 This is a example for globol scope local command.
-It allow 3rd customize specific local commend of each Content.
+
+It allow 3rd define local commend for each Content.
 
 It do not denpend on NuwaSDK version, but software version.
-Please make sure Robot on 100JP MR2 later software.
+Please make sure Robot on 100JP MR2/10000 MR8 later software.
 
 # Compatible robot version
 coming soon
