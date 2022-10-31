@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.util.Log;
 
 /**
- * SAMPLE Code of insert\update\delete 
+ * SAMPLE Code of insert/update/delete 
  */
 
 public class PartnerProviderAPI {
