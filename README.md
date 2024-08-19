@@ -77,6 +77,7 @@ Please get NuwaSDK from Nuwarobotics Developer Website
     //Insert Data to DB
     Uri myuri = PartnerProviderAPI.insert(context,mTestData1);
  ```
+  * NOTICE : Please must implement bulk insert/update to prevent frequently system loading .
 # `Debug`
  * query local_command list on database by adb
    ```
