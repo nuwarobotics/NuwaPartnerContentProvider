@@ -44,7 +44,7 @@ public class DataColumns implements BaseColumns {
      */
     public class PARTNER_CONTENT_CMD_COLUMN {
         public static final String COLUMN_IDX = BaseColumns._ID; /*data index*/
-        public static final String COLUMN_LOCAL_COMMAND = "local_command";/*String, user customize locol_command (Allow Empty)*/
+        public static final String COLUMN_LOCAL_COMMAND = "local_command";/*String, user customize local_command (Allow empty, but not allow repeat command)*/
         public static final String COLUMN_ENTITY = "entity";/*String, entity of this command (MUST)*/
         public static final String COLUMN_START_TYPE = "start_type";/*String, start type such as ACTIVITY, SERVICE, BROADCAST (MUST) */
         public static final String COLUMN_INTENT_PACKAGE = "intent_package";/*String, Intent target package (Allow Empty)*/
@@ -55,7 +55,7 @@ public class DataColumns implements BaseColumns {
     public static final String START_TYPE_SERVICE = "SERVICE";
     public static final String START_TYPE_BROADCAST = "BROADCAST";
 
-    // Defines an SQLite statement that builds the Picasa picture URL table
+    // Defines an SQLite statement that builds the PartnerContentProvider URL table
     public static final String CREATE_PARTNER_CONTENT_CMD_TABLE_SQL = "CREATE TABLE" + " " +
             PartnerProviderAPI.TABLE_NAME + " " +
             "(" + " " +
